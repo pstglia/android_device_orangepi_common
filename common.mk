@@ -71,8 +71,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 TARGET_SYSTEM_PROP := $(TARGET_SYSTEM_PROP) $(LOCAL_PATH)/system.prop
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.sys.strictmode.disable=1
+#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#    persist.sys.strictmode.disable=1
 
 # for debug
 PRODUCT_PACKAGES += kmsgd awlogd AwlogSettings

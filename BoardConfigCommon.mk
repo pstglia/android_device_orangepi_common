@@ -5,8 +5,8 @@ TARGET_NO_RECOVERY := false
 TARGET_NO_KERNEL := false
 
 # recovery related
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_common
-TARGET_RECOVERY_UI_LIB := librecovery_ui_common
+#TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_common
+#TARGET_RECOVERY_UI_LIB := librecovery_ui_common
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/orangepi/common
 
