@@ -14,25 +14,25 @@ on boot
     chown bluetooth net_bt_admin ${ro.bt.bdaddr_path}
 
 on property:persist.vendor.bluetooth_vendor=broadcom
-    insmod /vendor/lib/modules/bcm_btlpm.ko assert_level=1
+    insmod /vendor/lib/modules_longan/bcm_btlpm.ko assert_level=1
     setprop vendor.init.lpm.load 1
 
 on property:persist.vendor.bluetooth_vendor=realtek
-    insmod /vendor/lib/modules/rtl_btlpm.ko assert_level=1
+    insmod /vendor/lib/modules_longan/rtl_btlpm.ko assert_level=1
     setprop vendor.init.lpm.load 1
 
 on property:persist.vendor.bluetooth_vendor=xradio
-    insmod /vendor/lib/modules/xradio_btlpm.ko assert_level=3
+    insmod /vendor/lib/modules_longan/xradio_btlpm.ko assert_level=3
     setprop vendor.init.lpm.load 1
 
 on property:persist.vendor.bluetooth_vendor=sprd
-    insmod /vendor/lib/modules/uwe5622_bsp_sdio.ko
-    insmod /vendor/lib/modules/sprdbt_tty.ko
+    insmod /vendor/lib/modules_longan/uwe5622_bsp_sdio.ko
+    insmod /vendor/lib/modules_longan/sprdbt_tty.ko
     setprop vendor.init.lpm.load 1
 
 on property:persist.vendor.bluetooth_vendor=aic
-    insmod /vendor/lib/modules/aic8800_bsp.ko
-    insmod /vendor/lib/modules/aic8800_btlpm.ko assert_level=3
+    insmod /vendor/lib/modules_longan/aic8800_bsp.ko
+    insmod /vendor/lib/modules_longan/aic8800_btlpm.ko assert_level=3
     setprop vendor.init.lpm.load 1
 
 on property:vendor.driver.lpm.load=1
