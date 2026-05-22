@@ -32,4 +32,9 @@
 
     <!-- Boolean indicating if placing the phone face down will result in a screen off. -->
     <bool name="config_flipToScreenOffEnabled">false</bool>
+
+     <!-- Disable lockscreen entirely -->
+     <bool name="config_disableLockscreenByDefault">true</bool>
+
+     <bool name="config_enableLockScreenRotation">false</bool>
 </resources>
